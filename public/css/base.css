@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/hey-comic');
+body {
+    /*font-family: 'Rubik', sans-serif;*/
+    font-family: 'Hey Comic', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightblue;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+#post-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-container {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 500px;
+    min-width: 500px;
+    box-shadow: 2px 2px 6px rgba(68, 68, 68, 0.7), -3px -3px 6px rgba(255, 255, 255, 0.7);
+
+}
+
+button {
+    font-family: 'Hey Comic', sans-serif;
+    position: relative;
+    border-radius: 10px;
+    background-color: #80ff80;
+    border-style: none;
+    font-weight: 700;
+    font-size: 20px;
+    top: 0;
+    right: -200px;
+    margin: 30px;
+    width: 100px;
+    height: 40px;
+    box-shadow: 2px 2px 6px rgba(68, 68, 68, 0.7), -3px -3px 6px rgba(255, 255, 255, 0.7);
+    transition: transform .2s; /* Animation */
+}
+
+button:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.post-title, .post-content {
+    margin: 18px;
+}
+
+.post-content {
+    color: #545454;
+    max-width: 250ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
