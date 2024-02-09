@@ -10,12 +10,29 @@ body {
     background-color: lightblue;
 }
 
+h1 {
+    text-align: center;
+}
+
 a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
 }
+#update-form {
+    display: flex;
+    flex-direction: column;
+}
 
-.post-container {
+.input-data {
+    font-family: 'Hey Comic', sans-serif;
+    margin: 18px 18px 0 18px;
+}
+
+#content {
+    resize: vertical
+}
+
+.create-container {
     margin: 60px 0 0 0;
     border-radius: 10px;
     background-color: white;
@@ -25,10 +42,6 @@ a {
 
 }
 
-#post-content {
-    word-break: break-all;
-    white-space: normal;
-}
 button {
     font-family: 'Hey Comic', sans-serif;
     position: relative;
@@ -38,23 +51,29 @@ button {
     font-weight: 700;
     font-size: 20px;
     top: 0;
-    left: 53%;
-    margin: 0 0 18px 5px;
+    left: 75%;
+    margin: 18px 18px 18px 5px;
     width: 100px;
     height: 40px;
     box-shadow: 2px 2px 6px rgba(68, 68, 68, 0.7), -3px -3px 6px rgba(255, 255, 255, 0.7);
     transition: transform .2s; /* Animation */
 }
 
+.input-data {
+    align-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: rgba(84, 84, 84, 0.38);
+    box-shadow: inset -2px -2px 3px #e8e8e8, inset 2px 2px 3px #444444B2;
+
+}
 
 button:hover {
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-#post-title, #post-content {
-    margin: 18px;
-}
-
-#post-content {
-    color: #545454;
+.validation {
+    color: #ff7171;
+    margin-left: 18px;
 }

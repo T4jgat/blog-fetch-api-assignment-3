@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff29ced3-57fa-48fb-ab87-bc31a91aab20" name="Changes" comment="" />
+    <list default="true" id="ff29ced3-57fa-48fb-ab87-bc31a91aab20" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/create-post.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/edit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/post.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/post.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/create-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/create_post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/create-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/create_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,14 +24,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/blogs-consumer" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -35,7 +46,8 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Home/code/nodejsProjects/blogging-platform/client-fetch-api/public/css&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -47,6 +59,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Home\code\nodejsProjects\blogging-platform\client-fetch-api\public\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Home\code\nodejsProjects\blogging-platform\client-fetch-api\public\css" />
     </key>
@@ -61,7 +76,11 @@
       <updated>1707300364695</updated>
       <workItem from="1707300366361" duration="1204000" />
       <workItem from="1707305224476" duration="22553000" />
-      <workItem from="1707415772327" duration="3460000" />
+      <workItem from="1707415772327" duration="4094000" />
+      <workItem from="1707453032842" duration="2164000" />
+      <workItem from="1707455312375" duration="143000" />
+      <workItem from="1707455485546" duration="508000" />
+      <workItem from="1707458254383" duration="4881000" />
     </task>
     <servers />
   </component>

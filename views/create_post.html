@@ -1,22 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="/css/edit.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/create-post.css">
 </head>
 <body>
 <div class="create-container">
-    <h1>Edit Post</h1>
-    <form id="update-form">
+    <h1>Create Post</h1>
+    <form id="post-form">
         <input type="text" class="input-data" id="title" name="title" placeholder="title" required>
         <div id="title-validation" class="validation"></div>
         <textarea name="content" class="input-data" id="content" placeholder="content" cols="30" rows="10"></textarea>
         <div id="content-validation" class="validation"></div>
-        <button type="submit">Update</button>
+        <button type="submit">Create</button>
     </form>
 </div>
 
-<script src="/js/edit.js"></script>
+<script src="/js/create_post.js"></script>
 </body>
 </html>

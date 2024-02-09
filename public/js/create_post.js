@@ -1,50 +1,33 @@
-const url = window.location.href;
-const parts = url.split('/');
-const id = parts[parts.length - 2];
-console.log(id)
-const URL = `http://localhost:3000/blogs/${id}`
+// async function submitPost() {
+const URL = "http://localhost:3000/blogs"
+const postForm = document.getElementById("post-form")
 
 const titleValidation = document.getElementById("title-validation")
 const contentValidation = document.getElementById("content-validation")
 
-function dataToUpdate() {
-    fetch(URL)
-        .then(res => res.json())
-        .then(data => {
-            console.log(data)
-            displayData(data)
-        })
-}
-
-function displayData(data) {
-    const title = document.getElementById("title")
-    const content = document.getElementById("content")
-    title.value = data.title
-    content.innerHTML = data.content
-
-
-    const updateForm = document.getElementById('update-form')
-    updateForm.addEventListener('submit', async (event) => {
-        event.preventDefault();
-
+if (postForm) {
+    postForm.addEventListener("submit", async (event) => {
         titleValidation.innerHTML = ""
         contentValidation.innerHTML = ""
 
-        const putData = JSON.stringify(Object.fromEntries(new FormData(updateForm)))
-
-        try {
+        event.preventDefault()
+        const postData = JSON.stringify(Object.fromEntries(new FormData(postForm)))
+         try {
             const response = await fetch(URL, {
-                method: 'PUT',
+                method: "POST",
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 },
-                body: putData
-            });
-            const responseJson = await response.json();
+                body: postData,
+            })
+
+            const responseJson = await response.json()
 
             if (response.status === 200) {
-                alert("Post updated!")
+                alert("Post created!")
                 window.location.assign("/")
+            } else if (response.status === 409) {
+                alert("post already exists")
             } else if (response.status === 400) {
                 const errorMessage = document.createElement("p")
                 const errorResponse = responseJson.message.errors
@@ -68,14 +51,10 @@ function displayData(data) {
                 }
             }
 
-        } catch (error) {
-            console.error('Error updating object:', error);
+
+        } catch (err) {
+            console.log(err.message)
         }
-    });
+    })
 }
 
-
-
-
-
-window.onload = dataToUpdate

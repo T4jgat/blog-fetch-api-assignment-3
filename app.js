@@ -20,13 +20,13 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/views/index.html")
 })
 
-app.get("/:id", (req, res) => {
+app.get("/:id/", (req, res) => {
     const {id} = req.params
     res.sendFile(__dirname + "/views/post.html")
 })
 
-app.get("/new", (req, res) => {
-    res.sendFile(__dirname + "/views/create-post.html")
+app.get("/new/post", (req, res) => {
+    res.sendFile(__dirname + "/views/create_post.html")
 })
 
 app.get("/:id/edit", (req, res) => {
